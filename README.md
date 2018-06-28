@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This README is for my new app on Rails for purpose of learning Git.
 
 Things you may want to cover:
 
