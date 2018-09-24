@@ -1,3 +1,65 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.navbar-brand {
+  font-family: "Oleo Script", Helvetica, sans-serif;
+  font-size: 2.5em;
+  color: #000;
+  text-shadow: 3px 3px 0px rgba(255,255,255,1.0);
+  background-color: #F45B69;
+  text-align: center;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.navbar-nav a {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2em;
+  font-weight: 1000;
+  padding: 0px 8px;
+}
+
+#navbarNavAltMarkup {
+  justify-content: flex-end;
+}
+
+#mainpic {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5em;
+  font-weight: 800;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.0em;
+  font-weight: 100;
+  text-align: center;
+}
+
+.main-paragraph {
+  display: flex;
+  justify-content: center;
+}
+
+.main-paragraph p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.0em;
+  font-weight: 100;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-family: "Oleo Script", Helvetica, sans-serif;
+  font-size: 1.2em;
+  margin-top: 30px;
+}
