@@ -1,0 +1,27 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3em;
+  font-weight: 400;
+  text-align: left;
+  padding: 0 10px 0 5px;
+}
+
+.new_product_button {
+  display: flex;
+  justify-content: center;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  // color: #FFF; Can't seem to change this font color
+  background-color: #FDE2E2;
+  text-align: center;
+  width: 130px;
+  padding: 5px 8px;
+}
