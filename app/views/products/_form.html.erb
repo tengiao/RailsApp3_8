@@ -26,7 +26,18 @@
     <%= form.text_field :image_url %>
   </div>
 
+  <div class="field">
+    <%= form.label :colour %>
+    <%= form.text_field :colour %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %><p>($)</p>
+    <%= form.text_field :price %>
+  </div>
+
   <div class="actions">
+    <br>
     <%= form.submit %>
   </div>
 <% end %>
