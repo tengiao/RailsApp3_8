@@ -42,6 +42,7 @@ h1 {
 
 h2 {
   font-family: "Roboto", sans-serif;
+  color: #000;
   font-size: 1.0em;
   font-weight: 100;
   text-align: center;
@@ -66,4 +67,37 @@ footer {
   font-family: "Oleo Script", Helvetica, sans-serif;
   font-size: 1.2em;
   margin-top: 30px;
+}
+
+.carousel-indicators li,
+.carousel-indicators li.active {
+  position: relative;
+  top: 50px;
+  float: left;
+  width: 5%;
+  height: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 0;
+  background: pink;
+}
+
+.carousel-indicators li.active {
+  background: grey;
+}
+
+.carousel-img {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  margin-bottom: 50px;
+}
+
+.carousel-caption {
+  top: 350px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: pink;
 }
