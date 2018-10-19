@@ -24,7 +24,7 @@
         </div>
         <!-- <div class="carousel-caption d-none d-md-block"> -->
         <div class="carousel-caption">
-          <h3><%= product.name %></h3>
+          <h3><%= link_to product.name, product %></h3>
         </div>
       </div>
     <% end %>
@@ -38,4 +38,10 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+</div>
+
+<br><br><br>
+
+<div class="new_product_button">
+  <h4><%= link_to 'New Product', new_product_path %></h4>
 </div>
