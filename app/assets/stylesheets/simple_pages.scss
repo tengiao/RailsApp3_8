@@ -2,6 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
 .navbar {
   padding-left: 5px;
 }
@@ -17,15 +26,26 @@
   padding: 0 10px;
 }
 
-.navbar-nav a {
+#navbarNavAltMarkup {
+  justify-content: flex-end;
+}
+
+.navbar-nav a,
+.search_button {
   font-family: "Oswald", sans-serif;
   font-size: 1.2em;
   font-weight: 1000;
-  padding: 0px 8px;
+  margin: 0 10px 0 0;
 }
 
-#navbarNavAltMarkup {
-  justify-content: flex-end;
+.navbar > .collapse > .navbar-nav > .nav-item:hover {
+  // color: #F45B69;
+  color: #FDE2E2;
+  background-color: #000;
+}
+
+.navbar-nav form {
+  margin: 5px 0 0 0;
 }
 
 #mainpic {
@@ -61,12 +81,19 @@ h2 {
   text-align: left;
 }
 
-footer {
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+}
+
+footer, .push {
   display: flex;
   justify-content: center;
   font-family: "Oleo Script", Helvetica, sans-serif;
   font-size: 1.2em;
-  margin-top: 30px;
+  height: 142px;
 }
 
 .carousel-indicators li,

@@ -14,6 +14,7 @@ h3 {
 .new_product_button {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 h4 {
@@ -25,4 +26,27 @@ h4 {
   text-align: center;
   width: 130px;
   padding: 5px 8px;
+}
+
+.col-sm {
+  margin-bottom: 30px;
+}
+
+.col-sm p {
+  text-align: center;
+}
+
+.col-sm strong,
+.img-center {
+  display: flex;
+  justify-content: center;
+}
+
+.field label {
+  display: inline-block;
+  font-weight: 600;
+}
+
+.field input, textarea {
+  width: 500px;
 }
