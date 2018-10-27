@@ -42,11 +42,21 @@ h4 {
   justify-content: center;
 }
 
-.field label {
+.field label,
+.form-group label {
   display: inline-block;
   font-weight: 600;
 }
 
-.field input, textarea {
+.form-group {
   width: 500px;
+}
+
+.form-fields,
+.contact-fields {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
