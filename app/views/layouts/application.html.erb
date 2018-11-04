@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsApp5_3</title>
+    <title>RailsApp5_4</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -41,6 +41,18 @@
             <%= form.submit value: 'Search', class: 'search_button' %>
           <% end %>
         </div>
+
+        <ul class="navbar-nav ml-auto">
+          <% if user_signed_in? %>
+            <li class="nav-item">
+              <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "nav-link") %>
+            </li>
+          <% else %>
+            <li class="nav-item">
+              <%= link_to('Login', new_user_session_path, class: "nav-link") %>
+            </li>
+          <% end %>
+        </ul>
       </div>
     </nav>
 
