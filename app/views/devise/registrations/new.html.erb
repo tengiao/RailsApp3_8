@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<div class="form-signin">
+  <h1 class="form-signin-heading">Sign-up with Bike Berlin!</h1>
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
+
+    <div class="field">
+      <%= f.label :email, class: "sr-only" %>
+      <%= f.email_field :email, class: "form-control", placeholder: "Email address", autofocus: true, autocomplete: "email" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password, class: "sr-only" %>
+      <% if @minimum_password_length %>
+      <em>(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %>
+      <%= f.password_field :password, class: "form-control", placeholder: "Password", autocomplete: "new-password" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password_confirmation, class: "sr-only" %>
+      <%= f.password_field :password_confirmation, class: "form-control", placeholder: "Confirm Password", autocomplete: "new-password" %>
+      <br>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Sign-up", class: "btn btn-lg btn-primary btn-block" %>
+    </div>
+
+    <%= render "devise/shared/links" %>
+
+  <% end %>
+
+</div>
