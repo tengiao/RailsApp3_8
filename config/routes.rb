@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
+<<<<<<< HEAD
+=======
+  # devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout' }
+>>>>>>> 28de690ba688af9bf0759cfb1388b83c1b2ce3d9
   resources :users
   resources :products
   resources :orders, only: [:index, :show, :create, :destroy]

@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
+<<<<<<< HEAD
 <div class="form-signin">
+=======
+<form class="form-signin">
+>>>>>>> 28de690ba688af9bf0759cfb1388b83c1b2ce3d9
   <h1 class="form-signin-heading">Sign-up with Bike Berlin!</h1>
 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -13,9 +17,15 @@
 
     <div class="field">
       <%= f.label :password, class: "sr-only" %>
+<<<<<<< HEAD
       <% if @minimum_password_length %>
       <em>(<%= @minimum_password_length %> characters minimum)</em>
       <% end %>
+=======
+      <%# <% if @minimum_password_length %>
+      <!-- <em>(<%#= @minimum_password_length %> characters minimum)</em> -->
+      <%# <% end %>
+>>>>>>> 28de690ba688af9bf0759cfb1388b83c1b2ce3d9
       <%= f.password_field :password, class: "form-control", placeholder: "Password", autocomplete: "new-password" %>
     </div>
 
@@ -29,8 +39,16 @@
       <%= f.submit "Sign-up", class: "btn btn-lg btn-primary btn-block" %>
     </div>
 
+<<<<<<< HEAD
     <%= render "devise/shared/links" %>
 
   <% end %>
 
 </div>
+=======
+    <%#= render "devise/shared/links" %>
+
+  <% end %>
+
+</form>
+>>>>>>> 28de690ba688af9bf0759cfb1388b83c1b2ce3d9
