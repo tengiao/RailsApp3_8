@@ -21,6 +21,15 @@
     <%= form.text_field :last_name %>
   </div>
 
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <h6><%= link_to "Change your password", edit_user_registration_path %></h6>
+
+  <br>
+
   <div class="actions">
     <%= form.submit %>
   </div>
