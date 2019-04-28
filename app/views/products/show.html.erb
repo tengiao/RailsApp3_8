@@ -1,31 +1,47 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
+<h1>
   <%= @product.name %>
-</p>
+</h1>
+
+<div class="text-center">
+  <!-- class: "img-fluid", size: "200x200" -->
+  <%= image_tag(@product.image_url, class: "img-thumbnail img-fluid", alt: "Responsive image") unless @product.image_url.nil? %>
+</div>
 
 <p>
+  <br>
+  <i class="far fa-file-alt"></i>
   <strong>Description:</strong>
   <%= @product.description %>
 </p>
 
 <p>
+  <i class="fas fa-link"></i>
   <strong>Image url:</strong>
   <%= @product.image_url %>
 </p>
 
-<%= image_tag(@product.image_url, class: "img-fluid", size: "160x100") unless @product.image_url.nil? %>
 
 <p>
+  <i class="fas fa-palette"></i>
   <strong>Colour:</strong>
   <%= @product.colour %>
 </p>
 
 <p>
+  <i class="fas fa-dollar-sign"></i>
   <strong>Price:</strong>
-  $ <%= @product.price %>
+  $<%= @product.price %>
 </p>
+
+<p>
+  <i class="far fa-comments"></i>
+  <strong>Comments:</strong>
+  <%= @product.highest_rating_comment %>
+</p>
+
+<div class="comments-wrapper"></div>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <!-- <%= link_to 'Back', products_path %> -->
