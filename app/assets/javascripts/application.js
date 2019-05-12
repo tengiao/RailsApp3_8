@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require jquery3
 //= require_tree .
+//= require jquery.raty.js
 
 $(document).ready(function(){
   // alert("Document is ready!");
