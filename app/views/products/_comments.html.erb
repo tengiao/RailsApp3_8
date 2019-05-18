@@ -1,4 +1,5 @@
 <div class="product-reviews">
+  <% @comments = Comment.paginate(page: params[:page], per_page: 3) %>
   <% @comments.each do |comment| %>
     <div class="col">
       <hr>
