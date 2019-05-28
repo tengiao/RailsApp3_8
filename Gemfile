@@ -13,6 +13,10 @@ end
 group :development, :test do
   gem 'sqlite3'
 end
+# Run against the latest stable release
+group :development, :test do
+  gem 'rspec-rails', '~> 3.8'
+end
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
