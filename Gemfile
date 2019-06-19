@@ -74,3 +74,6 @@ gem 'cancancan', '~> 1.10'
 
 # Use will_paginate for pagination
 gem 'will_paginate', '~> 3.1.0'
+
+# Use Rails-Controller-Testing for assigns and assert_template functions
+gem 'rails-controller-testing'
