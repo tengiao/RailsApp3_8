@@ -15,7 +15,12 @@ group :development, :test do
 end
 # Run against the latest stable release
 group :development, :test do
+  # Use RSpec for unit and functional tests
   gem 'rspec-rails', '~> 3.8'
+  # Use FactoryBot to generate test data
+  gem 'factory_bot_rails', '~> 4.0'
+  gem 'database_cleaner'
+  gem 'faker'
 end
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
