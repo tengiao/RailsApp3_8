@@ -82,3 +82,6 @@ gem 'will_paginate', '~> 3.1.0'
 
 # Use Rails-Controller-Testing for assigns and assert_template functions
 gem 'rails-controller-testing'
+
+# Use Stripe as online payment processing service
+gem 'stripe'
